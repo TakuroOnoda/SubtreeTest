@@ -11,5 +11,7 @@ import Foundation
 public class ClassA {
     
     public var message = ""
-    
+    public init() {
+        
+    }
 }

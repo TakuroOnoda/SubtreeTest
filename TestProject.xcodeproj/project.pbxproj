@@ -15,6 +15,8 @@
 		637198ED1A6AFB8B00B23F50 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 637198EC1A6AFB8B00B23F50 /* Images.xcassets */; };
 		637198F01A6AFB8B00B23F50 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 637198EE1A6AFB8B00B23F50 /* LaunchScreen.xib */; };
 		637198FC1A6AFB8B00B23F50 /* TestProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637198FB1A6AFB8B00B23F50 /* TestProjectTests.swift */; };
+		637199371A6AFE6A00B23F50 /* SubtreeTest.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 637199331A6AFE5100B23F50 /* SubtreeTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6371993A1A6AFEA100B23F50 /* dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 637199391A6AFEA100B23F50 /* dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,7 +27,34 @@
 			remoteGlobalIDString = 637198DB1A6AFB8B00B23F50;
 			remoteInfo = TestProject;
 		};
+		637199321A6AFE5100B23F50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6371992D1A6AFE5100B23F50 /* SubtreeTest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6371990F1A6AFBAB00B23F50;
+			remoteInfo = SubtreeTest;
+		};
+		637199341A6AFE5100B23F50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6371992D1A6AFE5100B23F50 /* SubtreeTest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6371991A1A6AFBAB00B23F50;
+			remoteInfo = SubtreeTestTests;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		637199361A6AFE5F00B23F50 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				637199371A6AFE6A00B23F50 /* SubtreeTest.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		637198DC1A6AFB8B00B23F50 /* TestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +69,9 @@
 		637198F51A6AFB8B00B23F50 /* TestProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		637198FA1A6AFB8B00B23F50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		637198FB1A6AFB8B00B23F50 /* TestProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestProjectTests.swift; sourceTree = "<group>"; };
+		6371992D1A6AFE5100B23F50 /* SubtreeTest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SubtreeTest.xcodeproj; path = st/SubtreeTest.xcodeproj; sourceTree = "<group>"; };
+		637199381A6AFEA100B23F50 /* TestProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestProject-Bridging-Header.h"; sourceTree = "<group>"; };
+		637199391A6AFEA100B23F50 /* dummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dummy.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +95,7 @@
 		637198D31A6AFB8B00B23F50 = {
 			isa = PBXGroup;
 			children = (
+				6371992D1A6AFE5100B23F50 /* SubtreeTest.xcodeproj */,
 				637198DE1A6AFB8B00B23F50 /* TestProject */,
 				637198F81A6AFB8B00B23F50 /* TestProjectTests */,
 				637198DD1A6AFB8B00B23F50 /* Products */,
@@ -89,6 +122,8 @@
 				637198EC1A6AFB8B00B23F50 /* Images.xcassets */,
 				637198EE1A6AFB8B00B23F50 /* LaunchScreen.xib */,
 				637198DF1A6AFB8B00B23F50 /* Supporting Files */,
+				637199391A6AFEA100B23F50 /* dummy.m */,
+				637199381A6AFEA100B23F50 /* TestProject-Bridging-Header.h */,
 			);
 			path = TestProject;
 			sourceTree = "<group>";
@@ -118,6 +153,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6371992E1A6AFE5100B23F50 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				637199331A6AFE5100B23F50 /* SubtreeTest.framework */,
+				637199351A6AFE5100B23F50 /* SubtreeTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -128,6 +172,7 @@
 				637198D81A6AFB8B00B23F50 /* Sources */,
 				637198D91A6AFB8B00B23F50 /* Frameworks */,
 				637198DA1A6AFB8B00B23F50 /* Resources */,
+				637199361A6AFE5F00B23F50 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -185,6 +230,12 @@
 			mainGroup = 637198D31A6AFB8B00B23F50;
 			productRefGroup = 637198DD1A6AFB8B00B23F50 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6371992E1A6AFE5100B23F50 /* Products */;
+					ProjectRef = 6371992D1A6AFE5100B23F50 /* SubtreeTest.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				637198DB1A6AFB8B00B23F50 /* TestProject */,
@@ -192,6 +243,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		637199331A6AFE5100B23F50 /* SubtreeTest.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SubtreeTest.framework;
+			remoteRef = 637199321A6AFE5100B23F50 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		637199351A6AFE5100B23F50 /* SubtreeTestTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SubtreeTestTests.xctest;
+			remoteRef = 637199341A6AFE5100B23F50 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		637198DA1A6AFB8B00B23F50 /* Resources */ = {
@@ -218,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6371993A1A6AFEA100B23F50 /* dummy.m in Sources */,
 				637198E41A6AFB8B00B23F50 /* RootViewController.swift in Sources */,
 				637198E81A6AFB8B00B23F50 /* ModelController.swift in Sources */,
 				637198E61A6AFB8B00B23F50 /* DataViewController.swift in Sources */,
@@ -346,9 +415,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TestProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestProject/TestProject-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -356,9 +428,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TestProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestProject/TestProject-Bridging-Header.h";
 			};
 			name = Release;
 		};
